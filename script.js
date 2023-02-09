@@ -16,6 +16,7 @@ function calculateAge() {
     m *= -1;
   }
   document.getElementById('age').value = age + " years and " + m + " months";
+  document.getElementById('age2').value = age + " years and " + m + " months";
 }
 
 
