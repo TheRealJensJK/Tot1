@@ -33,17 +33,17 @@
 			<h2>Join today</h2>
 			<form action="https://formsubmit.co/3aaf4909c40802d801a516f4d2a15251" method="post">
 				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" placeholder="Your name.." required>
+				<input type="text" id="name" name="Name" placeholder="Your name.." required>
 
 				<label for="bday">Date of birth</label>
-				<input type="date" id="bday" name="bday" onchange="calculateAge()" max="" required>
-				<input type="hidden" id="age" value="Age">
+				<input type="date" id="bday" name="Birthday" onchange="calculateAge()" max="" required>
+				<input type="text" id="age" value="Age" style="height: 0px; width: 0px;">
 
 				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" placeholder="Your email.." required>
+				<input type="email" id="email" name="E-mail" placeholder="Your email.." required>
 
 				<label for="country">Country:</label>
-				<select id="country" name="country">
+				<select id="country" name="Country">
 					<option>Please select</option>
 					<optgroup label="Nordic countries">
 						<option value="Norway">Norway</option>
@@ -305,13 +305,23 @@
 				</select>
 
 				<label for="city">City:</label>
-				<input type="city" id="city" name="city" placeholder="Your home city" required>
+				<input type="city" id="city" name="City" placeholder="Your home city" required>
 
 				<label for="nickname">Nickname:</label>
-				<input type="text" id="nickname" name="nickname" placeholder="Your nickname.." required>
+				<input type="text" id="nickname" name="Nickname" placeholder="Your nickname.." required>
 
 				<label for="about">About you:</label>
-				<textarea id="about" name="about" placeholder="Write somthing about yourself" required></textarea>
+				<textarea id="about" name="About" placeholder="Write somthing about yourself" required></textarea>
+
+				<!-- hidden input fields to customise the email form -->
+				<!-- secret input to stop spam -->
+				<input type="text" name="_honey" style="display:none">
+
+				<!-- autoresponse so the person submitting the form gets a copy -->
+				<input type="hidden" name="_autoresponse" value="your custom message">
+
+				<!-- setting the subject of the emails -->
+				<input type="hidden" name="_subject" value="New application!">
 				
 				<input type="submit" value="Submit">
 			</form>
