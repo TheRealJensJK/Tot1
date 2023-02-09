@@ -6,7 +6,7 @@ window.onload = setMaxDate();
 //calculate age in years and months
 //output age in years and months to html tag using innerHTML
 function calculateAge() {
-  var birthDate = document.getElementById('Birthday').value;
+  var birthDate = document.getElementById('bday').value;
   var age = new Date().getFullYear() - new Date(birthDate).getFullYear();
   var m = new Date().getMonth() - new Date(birthDate).getMonth();
   if (m < 0 || (m === 0 && new Date().getDate() < new Date(birthDate).getDate())) {
@@ -15,7 +15,7 @@ function calculateAge() {
   if(m < 0){
     m *= -1;
   }
-  document.getElementById('age').value = "age " + age + " years and " + m + " months";
+  document.getElementById('age').value = age + " years and " + m + " months";
 }
 
 
