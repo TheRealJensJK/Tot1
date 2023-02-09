@@ -31,16 +31,16 @@
 		</article>
 		<article>
 			<h2>Join today</h2>
-			<form>
+			<form action="https://formsubmit.co/jens_nickelsen@outloo.com" method="post">
 				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" placeholder="Your name..">
+				<input type="text" id="name" name="name" placeholder="Your name.." required>
 
 				<label for="bday">Date of birth</label>
-				<input type="date" id="bday" name="bday" max="2018-12-31"> onchange="calculateAge()">
+				<input type="date" id="bday" name="bday" max="" onchange="calculateAge()" required>
 				<input type="hidden" id="age" value="Age">
 
 				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" placeholder="Your email..">
+				<input type="email" id="email" name="email" placeholder="Your email.." required>
 
 				<label for="country">Country:</label>
 				<select id="country" name="country">
@@ -305,13 +305,13 @@
 				</select>
 
 				<label for="city">City:</label>
-				<input type="city" id="city" name="city" placeholder="Your home city">
+				<input type="city" id="city" name="city" placeholder="Your home city" required>
 
 				<label for="nickname">Nickname:</label>
-				<input type="text" id="nickname" name="nickname" placeholder="Your nickname..">
+				<input type="text" id="nickname" name="nickname" placeholder="Your nickname.." required>
 
 				<label for="about">About you:</label>
-				<textarea id="about" name="about" placeholder="Write somthing about yourself"></textarea>
+				<textarea id="about" name="about" placeholder="Write somthing about yourself" required></textarea>
 				
 				<input type="submit" value="Submit">
 			</form>
