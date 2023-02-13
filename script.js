@@ -35,7 +35,3 @@ function setMaxDate(){
     today = yyyy+'-'+mm+'-'+dd;
     document.getElementById("bday").setAttribute("max", today);
 }
-
-
-//input id=bday
-//output id=age
