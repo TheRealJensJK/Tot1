@@ -4,7 +4,8 @@ A work in proges site can be viewed here: https://therealjensjk.github.io/Tot1/
 Feedback needed on:
 - Colour pallet
 - Header image
-- Should the **Tot1** text in the header have 
+- Should the **Tot1** text in the header have a "battle scared" font?
+- Other?
 
 
 ---
