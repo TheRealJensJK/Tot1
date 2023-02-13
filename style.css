@@ -61,7 +61,8 @@ article p {
 .main-content {
     margin: 0 15%;
 	padding: 0 5%;
-	background-color: #4B5762;
+    padding-top: 5px;
+    background-color: #4B5762;
 	border-radius: 0 0 10px 10px;
 }
 
