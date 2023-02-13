@@ -6,6 +6,7 @@ Feedback needed on:
 - Header image (nevner mind the Mars image, it is a placeholder)
 - Should the **Tot1** text in the header have a "battle scared" font?
 - Other?
+- The red text is temporary
 
 
 ---
