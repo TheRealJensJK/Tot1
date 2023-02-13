@@ -12,10 +12,10 @@ Feedback needed on:
 ## How to read code
 
 In the index.html file comments are in the brackets like this:
-` <!-- --> `
+` <!-- example --> `
 
 In the style.css file comments are in brackets like this: 
-` /*  */ `
+` /* example */ `
 
 In script.js file comments behind // like this:
-` // `
+` //example `
