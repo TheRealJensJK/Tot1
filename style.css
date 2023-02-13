@@ -19,14 +19,14 @@ body{
 }
 
 /* setting the bacground image in the header */
-header:first-child {
-	background-image: url("images/header.jpg");
+header div:first-child {
+	background-image: url("images/header2.webp");
     background-color: #cccccc;
-    height: 35vh;
+    height: 100vh;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    background-size: auto 100vh;
 }
 
 /* center text in header */
@@ -41,7 +41,11 @@ header div:last-child {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 70px;
+}
+
+header h2 {
+    animation: scrollDown 3s infinite;
 }
 
 article {
@@ -133,6 +137,33 @@ label {
     clear: both;
 }
 
+iframe {
+    width: 350px; 
+    height: 500px;
+    max-width: 80vw;
+    max-height: 60vh;
+}
+
+.scroll-container {
+    scroll-snap-type: y proximity;
+}
+
+.scroll-area {
+    scroll-snap-align: start;
+}
+
+/* animation to make text float up and down */
+@keyframes scrollDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
   
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
@@ -148,7 +179,24 @@ label {
         margin-top: 0;
     }
 
+    header div:last-child {
+        margin-top: 35vh;
+    }
+
+    header h2 {
+        width: 100vw;
+    }
+
+    header div:last-child {
+        top: 10%;
+    }
     header:first-child {
-        height: 25vh;
+        background-image: url("images/smalHeader.jpg");
     }
 }
+
+@media only screen and (max-device-width: 1366px) {
+    header:first-child {
+      background-attachment: scroll;
+    }
+  }

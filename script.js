@@ -1,5 +1,6 @@
 //setting the current date as the max date for the date input
 window.onload = setMaxDate();
+//window.onload = disableScroll();
 
 
 //calculate the age of the applicant based on the input in the form, the age is not displayed to the user, but is included in the email sent to the admin (to easier see the age, and not have to calculate age themself)
@@ -20,16 +21,38 @@ function calculateAge() {
 
 //set the max attribute of the date input to today's date to prevent future dates as inputs
 function setMaxDate(){
-    var today = new Date();
-    var dd = today.getDate();
-    var mm = today.getMonth()+1; //January is 0!
-    var yyyy = today.getFullYear();
-    if(dd<10){
-        dd='0'+dd
-    }
-    if(mm<10){
-        mm='0'+mm
-    }
-    today = yyyy+'-'+mm+'-'+dd;
-    document.getElementById("bday").setAttribute("max", today);
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth()+1; //January is 0!
+  var yyyy = today.getFullYear();
+  if(dd<10){
+      dd='0'+dd
+  }
+  if(mm<10){
+      mm='0'+mm
+  }
+  today = yyyy+'-'+mm+'-'+dd;
+  document.getElementById("bday").setAttribute("max", today);
 }
+
+//disable scrolling on the page
+function disableScroll(){
+  // Get the current page scroll position
+  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+  window.onscroll = function() {
+    window.scrollTo(scrollLeft, scrollTop);
+  };
+}
+
+function enableScroll() {
+  window.onscroll = function() {};
+}
+
+document.addEventListener("scroll", function firstScroll(){
+  window.scrollTo({behavior: 'smooth' , top: 1000});
+  
+  enableScroll();
+},{once:true});
+

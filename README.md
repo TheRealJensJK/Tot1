@@ -3,7 +3,7 @@ A work in proges site can be viewed here: https://therealjensjk.github.io/Tot1/
 
 Feedback needed on:
 - Colour pallet
-- Header image (nevner mind the Mars image, it is a placeholder)
+- Header image
 - Should the **Tot1** text in the header have a "battle scared" font?
 - Other?
 - **The red text is temporary**
