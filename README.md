@@ -4,6 +4,7 @@
 ## Feedback needed on:
 - Colour pallet
 - Header image
+- Text in the "abort clan" secrion
 - Should the **Tot1** text in the header have a "battle scared" font?
 - Any other requirements?
 - Other?
