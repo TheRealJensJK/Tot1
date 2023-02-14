@@ -32,7 +32,7 @@ function setMaxDate(){
       mm='0'+mm
   }
   today = yyyy+'-'+mm+'-'+dd;
-  document.getElementById("bday").setAttribute("max", today);
+  document.getElementById("birthday").setAttribute("max", today);
 }
 
 //disable scrolling on the page
