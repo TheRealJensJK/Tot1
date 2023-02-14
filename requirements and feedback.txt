@@ -1,0 +1,21 @@
+Theme: Black / Blue
+    Do we need a new banner?
+
+parts of the page:
+    -front page
+    -links to facebook, discord, etc. 
+    -apply membership:
+        -name 
+        -age 
+        -from (city) 
+        -from (country) 
+        -e-mail 
+        -nickname 
+        -about 
+
+Feedback:
+    Topic
+        -Spesific feedback
+
+    Topic
+        -Spesific feedback
