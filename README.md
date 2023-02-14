@@ -18,6 +18,8 @@ The work in progress site (the link in the top of the description) can be sheare
 
 If you fill out the apply form a email will automaticaly be sent to me, if you try to fill it out i will forward the mail to you, so you can se how it looks (the reciver of the email will be modifyed at a later point).
 
+Any bugs can also for the time beeing be added to the requirements and feedback file. (Note: Some functions and alignments of elements are still work in progress and not classified as bugs)
+
 ---
 ## How to read code
 
