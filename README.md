@@ -12,7 +12,7 @@
 ---
 
 ## How to
-Give feedback and/or add requirements in the requirements and feedback.txt file. If you have an idea for the header image, upload the image to the images folder (note: the same image does not necessarily work on both web and mobile hence in the current version the use two different images). 
+Give feedback and/or add requirements in the requirements and feedback.txt file. To edit the file;  click on it and there will be a pencil at over the text of the document. If you have an idea for the header image, upload the image to the images folder (note: the same image does not necessarily work on both web and mobile hence in the current version the use two different images). To upload to the images folder; click on the folder, then use the add file button at over the list of existing files.
 
 The work in progress site (the link in the top of the description) can be sheared with others, but due to not wanting to deal with others forking and or modifying the project, the github page is private. If anyone else have any feedback they can tell you and you can modify the requirements and feedback file accordingly, or upload an image for use as the header.
 
