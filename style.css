@@ -20,7 +20,7 @@ body{
 
 /* setting the bacground image in the header */
 header div:first-child {
-	background-image: url("../images/header2.webp");
+	background-image: url("header.jpg");
     background-color: #cccccc;
     height: 100vh;
     background-attachment: fixed;
@@ -172,7 +172,7 @@ iframe {
         margin: 0 5%;
     }
     header div:first-child {
-        background-image: url("../images/smalHeader.jpg");
+        background-image: url("smalHeader.jpg");
     }
 }
 

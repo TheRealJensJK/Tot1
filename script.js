@@ -58,7 +58,7 @@ if (!isMobile()) {
   
 
   document.addEventListener("scroll", function firstScroll(){
-    window.scrollTo({behavior: 'smooth' , top: window.innerHeight + 10});
+    window.scrollTo({behavior: 'smooth' , top: window.innerHeight + 20});
     
     enableScroll();
   },{once:true});
