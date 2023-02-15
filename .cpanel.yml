@@ -6,7 +6,7 @@ deployment:
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp favicon.ico $DEPLOYPATH
     - /bin/cp header.jpg $DEPLOYPATH
-    - /bin/cp smalerHeader.jpg $DEPLOYPATH
+    - /bin/cp smalerheader.jpg $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
     - /bin/cp siteError.html $DEPLOYPATH
     - /bin/cp siteError.css $DEPLOYPATH
