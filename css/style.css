@@ -171,6 +171,9 @@ iframe {
     .main-content {
         margin: 0 5%;
     }
+    header div:first-child {
+        background-image: url("../images/smalHeader.jpg");
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -190,8 +193,9 @@ iframe {
     header div:last-child {
         top: 10%;
     }
-    header:first-child {
-        background-image: url("images/smalHeader.jpg");
+    
+    #about {
+        height: 12vh;
     }
 }
 

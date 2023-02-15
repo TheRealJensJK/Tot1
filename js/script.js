@@ -1,7 +1,5 @@
 //setting the current date as the max date for the date input
 window.onload = setMaxDate();
-//window.onload = disableScroll();
-
 
 //calculate the age of the applicant based on the input in the form, the age is not displayed to the user, but is included in the email sent to the admin (to easier see the age, and not have to calculate age themself)
 function calculateAge() {
@@ -36,6 +34,7 @@ function setMaxDate(){
 }
 
 
+
 //preventing the scroll function from running on phones and tablets
 function isMobile() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -56,9 +55,10 @@ if (!isMobile()) {
   function enableScroll() {
     window.onscroll = function() {};
   }
+  
 
   document.addEventListener("scroll", function firstScroll(){
-    window.scrollTo({behavior: 'smooth' , top: 1000});
+    window.scrollTo({behavior: 'smooth' , top: window.innerHeight + 10});
     
     enableScroll();
   },{once:true});
