@@ -4,6 +4,9 @@ deployment:
     - export DEPLOYPATH=/home/totclanc/public_html/
     - export DEPLOYIMAGEPATH=/home/totclanc/public_html/images
     - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp favicon.ico $DEPLOYPATH
+    - /bin/cp header.jpg $DEPLOYPATH
+    - /bin/cp smallHeader.jpg $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
     - /bin/cp siteError.html $DEPLOYPATH
     - /bin/cp siteError.css $DEPLOYPATH
