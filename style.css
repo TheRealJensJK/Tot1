@@ -63,6 +63,7 @@ article p {
     padding-top: 5px;
     background-color: #4B5762;
 	border-radius: 0 0 10px 10px;
+    padding-bottom: 1vh;
 }
 
 form label{
@@ -90,7 +91,7 @@ input[type=date], select, textarea {
 }
   
 input[type=submit] {
-    background-color: #04AA6D;
+    background-color: rgb(75,87,98);
     color: white;
     padding: 12px 20px;
     border: none;
