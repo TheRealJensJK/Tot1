@@ -3,7 +3,7 @@ window.onload = setMaxDate();
 
 //calculate the age of the applicant based on the input in the form, the age is not displayed to the user, but is included in the email sent to the admin (to easier see the age, and not have to calculate age themself)
 function calculateAge() {
-  var birthDate = document.getElementById('bday').value;
+  var birthDate = document.getElementById('birthday').value;
   var age = new Date().getFullYear() - new Date(birthDate).getFullYear();
   var m = new Date().getMonth() - new Date(birthDate).getMonth();
   if (m < 0 || (m === 0 && new Date().getDate() < new Date(birthDate).getDate())) {
