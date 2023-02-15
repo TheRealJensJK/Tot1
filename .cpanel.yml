@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/totclanc/public_html/
+    - export DEPLOYIMAGEPATH=/home/totclanc/public_html/images
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp script.js $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYIMAGEPATH
