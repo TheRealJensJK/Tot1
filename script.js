@@ -35,24 +35,34 @@ function setMaxDate(){
   document.getElementById("birthday").setAttribute("max", today);
 }
 
-//disable scrolling on the page
-function disableScroll(){
-  // Get the current page scroll position
-  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
 
-  window.onscroll = function() {
-    window.scrollTo(scrollLeft, scrollTop);
-  };
+//preventing the scroll function from running on phones and tablets
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
-
-function enableScroll() {
-  window.onscroll = function() {};
-}
-
-document.addEventListener("scroll", function firstScroll(){
-  window.scrollTo({behavior: 'smooth' , top: 1000});
   
-  enableScroll();
-},{once:true});
+if (!isMobile()) {
+  //disable scrolling on the page
+  function disableScroll(){
+    // Get the current page scroll position
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+    window.onscroll = function() {
+      window.scrollTo(scrollLeft, scrollTop);
+    };
+  }
+
+  function enableScroll() {
+    window.onscroll = function() {};
+  }
+
+  document.addEventListener("scroll", function firstScroll(){
+    window.scrollTo({behavior: 'smooth' , top: 1000});
+    
+    enableScroll();
+  },{once:true});
+}
+  
+  
 
