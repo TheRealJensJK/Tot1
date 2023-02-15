@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: "Open Sans", sans-serif;
+    text-align: center;
 }
 
 /* setting css to grid to align header content and colours and font size */
@@ -13,20 +14,21 @@ body{
     min-height: 100%;
   	display: grid;
   	grid-template-rows: auto;
-	background-color: rgb(53, 53, 53);
+	background-color: rgba(53, 53, 53, 0);
 	color: white;
 	font-size: large;
-}
-
-/* setting the bacground image in the header */
-header div:first-child {
-	background-image: url("header.jpg");
-    background-color: #cccccc;
-    height: 100vh;
+    background-image: url("header.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 100vh;
+}
+
+/* setting the bacground image in the header */
+header div:first-child {
+
+    
+    
 }
 
 /* center text in header */
@@ -59,9 +61,12 @@ article p {
 /* main content container, includes everything exept header */
 .main-content {
     margin: 0 15%;
+    margin-top: 100vh;
 	padding: 0 5%;
     padding-top: 5px;
-    background-color: #4B5762;
+    position: absolute;
+    left: 0;
+    right: 0;
 	border-radius: 0 0 10px 10px;
     padding-bottom: 1vh;
 }
@@ -170,7 +175,11 @@ iframe {
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1200px) {
     .main-content {
-        margin: 0 5%;
+        margin: 0 2%;
+        margin-top: 100vh;
+    }
+    .container {
+        margin: 0 2%;
     }
     header div:first-child {
         background-image: url("smalerHeader.jpg");
