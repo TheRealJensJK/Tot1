@@ -12,8 +12,9 @@ function calculateAge() {
   if(m < 0){
     m *= -1;
   } 
-  document.getElementById('age2').value = age + " years and " + m + " months";
+  document.getElementById('age').value = age + " years and " + m + " months";
 }
+
 
 
 //set the max attribute of the date input to today's date to prevent future dates as inputs
