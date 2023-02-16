@@ -203,7 +203,7 @@ iframe {
     }
 }
 
-@media all and (max-width:1024px) {
+@media (pointer: coarse) {
     body:after {
         content: '';
         width: 100%;
