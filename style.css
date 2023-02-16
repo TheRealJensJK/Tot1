@@ -211,7 +211,7 @@ iframe {
         background-position: inherit;
         background-image: inherit;
         background-size: inherit;
-        background-attachment: inherit;
+        background-attachment: initial;
         background-repeat: inherit;
         position: fixed;
         top: 0;
