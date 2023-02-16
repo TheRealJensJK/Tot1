@@ -8,7 +8,7 @@ deployment:
     - /bin/cp hi-def.jpg $DEPLOYPATH
     - /bin/cp header.jpg $DEPLOYPATH
     - /bin/cp manifest.json $DEPLOYPATH
-    - /bin/cp smalerheader.jpg $DEPLOYPATH
+    - /bin/cp smalerHeader.jpg $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
     - /bin/cp siteError.html $DEPLOYPATH
     - /bin/cp siteError.css $DEPLOYPATH
