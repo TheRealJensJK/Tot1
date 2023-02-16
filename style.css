@@ -212,7 +212,10 @@ iframe {
     .container {
         margin: 0 2%;
     }
-    header div:first-child {
+    header div:last-child {
+        top: 32%;
+    }
+    body {
         background-image: url("smalerHeader.jpg");
     }
 }
@@ -223,16 +226,8 @@ iframe {
         margin-top: 0;
     }
 
-    header div:last-child {
-        margin-top: 35vh;
-    }
-
     header h2 {
         width: 100vw;
-    }
-
-    header div:last-child {
-        top: 10%;
     }
     
     #about {
