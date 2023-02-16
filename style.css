@@ -24,11 +24,13 @@ body{
     background-size: auto 100vh;
 }
 
-/* setting the bacground image in the header */
-header div:first-child {
+small{
+    font-size: 14px;
+}
 
-    
-    
+.small{
+    margin-top: 0;
+    padding-top: 0;
 }
 
 /* center text in header */
@@ -46,12 +48,30 @@ h1 {
     font-size: 70px;
 }
 
+img {
+    width: auto;
+    height: 30vh;
+}
+
+.disable-scrolling {
+    overflow-y: hidden;
+}
+
+.top {
+    height: 100vh;
+}
+
+.topParagraph{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
 header h2 {
     animation: scrollDown 3s infinite;
 }
 
 article {
-	margin: 75px 0;
+	margin-top: 50px;
 }
 
 article p {
@@ -61,7 +81,6 @@ article p {
 /* main content container, includes everything exept header */
 .main-content {
     margin: 0 15%;
-    margin-top: 100vh;
 	padding: 0 5%;
     padding-top: 5px;
     position: absolute;
@@ -71,8 +90,12 @@ article p {
     padding-bottom: 1vh;
 }
 
-form label{
-    color: black;
+.about {
+    
+}
+
+form * {
+    text-align: left;
 }
 
 .formHiddenElement{
@@ -116,8 +139,9 @@ label {
 
 /* container for the form */
 .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
+    border-radius: 10px;
+    background-color: rgba(13, 98, 112, 0.61);
+    
     padding: 20px;
     margin: 0 10% 0 10%;
 }
@@ -141,6 +165,18 @@ label {
     content: "";
     display: table;
     clear: both;
+}
+
+a {
+    color: inherit;
+}
+
+a:visited {
+    color: rgb(28, 177, 28);
+}
+
+a:hover {
+    color: lightgreen;
 }
 
 iframe {
@@ -176,7 +212,6 @@ iframe {
 @media screen and (max-width: 1200px) {
     .main-content {
         margin: 0 2%;
-        margin-top: 100vh;
     }
     .container {
         margin: 0 2%;
