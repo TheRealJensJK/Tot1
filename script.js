@@ -49,3 +49,6 @@ window.addEventListener('resize', () => {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
+function scrollDown(){
+  window.scrollTo({behavior: 'smooth', top: document.body.scrollHeight});
+}
