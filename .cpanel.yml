@@ -18,4 +18,5 @@ deployment:
     - /bin/cp apple-touch-icon.png $DEPLOYPATH
     - /bin/cp favicon-16x16.png $DEPLOYPATH
     - /bin/cp favicon-32x32.png $DEPLOYPATH
+    - /bin/cp sitemap.xml $DEPLOYPATH
     - /bin/cp -R images $DEPLOYIMAGEPATH
