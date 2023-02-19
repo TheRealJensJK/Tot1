@@ -13,6 +13,7 @@ deployment:
     - /bin/cp siteError.html $DEPLOYPATH
     - /bin/cp siteError.css $DEPLOYPATH
     - /bin/cp script.js $DEPLOYPATH
+    - /bin/cp Tot1ClanLogo.webp $DEPLOYPATH
     - /bin/cp android-chrome-192x192.png $DEPLOYPATH
     - /bin/cp android-chrome-512x512.png $DEPLOYPATH
     - /bin/cp apple-touch-icon.png $DEPLOYPATH
