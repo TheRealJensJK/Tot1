@@ -55,6 +55,10 @@ h1 {
     font-size: 70px;
 }
 
+h3 {
+    margin-top: 2vh;
+}
+
 img {
     width: auto;
     height: 30vh;
@@ -184,8 +188,9 @@ a:hover {
 }
 
 iframe {
-    width: 450px; 
-    height: 500px;
+    width: 20vw; 
+    height: 55vh;
+    min-width: 350px;
     max-width: 80vw;
     max-height: 60vh;
 }
