@@ -126,7 +126,7 @@ input[type=date], select, textarea {
 }
   
 input[type=submit] {
-    background-color: rgb(75,87,98);
+    background-color: rgb(242, 106, 27);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -147,27 +147,26 @@ label {
 
 /* container for the form */
 .container {
-    border-radius: 10px;
-    background-color: rgba(13, 98, 112, 0.61);
-    
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 20px;
     margin: 0 10% 0 10%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
 }
 
-/* label field of the form */
-.col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
+
+ 
+.row {
+
 }
-  
-/* input field of the form */
-.col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
+
+.form-label {
+    
 }
-  
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
