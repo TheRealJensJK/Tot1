@@ -4,6 +4,11 @@
     font-display: swap;
 }
 
+/* :root { 
+
+}
+*/
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -79,6 +84,7 @@ img {
 
 header h2 {
     animation: scrollDown 3s infinite;
+    cursor: default;
 }
 
 article {
@@ -113,31 +119,41 @@ form * {
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
+    color: #cfcfcf;
+    background-color: transparent;
+}
+
+select:focus {
+    color: #000;
 }
 
 input[type=date], select, textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
     border-radius: 4px;
+    color: #cfcfcf;
+    background-color: transparent;
 }
   
 input[type=submit] {
     background-color: rgb(242, 106, 27);
     color: white;
     padding: 12px 20px;
-    border: none;
     border-radius: 4px;
+    border: none;
     cursor: pointer;
-    float: right;
+    float: left;
     margin-top: 0.5vh;
 }
   
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
 input[type=submit]:hover {
-    background-color: rgb(47, 53, 59);
+    background-color: rgb(138, 57, 10);
 }
 
 label {
@@ -148,7 +164,7 @@ label {
 /* container for the form */
 .container {
     border-radius: 15px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 20px;
     margin: 0 10% 0 10%;
@@ -156,16 +172,57 @@ label {
     height: auto;
     overflow: hidden;
 }
-
-
- 
-.row {
-
-}
-
 .form-label {
-    
+    font-size: 0.75em;
+    display: block;
+    opacity: 0;
+    transition: all 0.4s;
+    transform: translateX(-50px);
 }
+
+.country {
+    font-size: 0.75em;
+    display: block;
+}
+
+.form-controll {
+    box-shadow: none;
+    border-radius: 0;
+    border-color: #999;
+    border-style: none none solid none;
+    font-size: 1.25em;
+    transition: all 0.4s;
+}
+
+.form-controll::placeholder{
+    color: #cfcfcf;
+}
+
+.form-controll:focus {
+    box-shadow: none;
+    border-color: #fff;
+    outline: none;
+
+}
+
+.row:focus-within {
+    transform: scale(1.02,1.02);
+}
+
+.form-controll:invalid:focus {
+    border-color: #ff0000;
+}
+
+.form-controll:valid {
+    border-color: #00ff00;
+}
+
+.focused > label {
+    opacity: 1;
+    transform: translateX(0px);
+
+}
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -245,6 +302,9 @@ iframe {
     }
     body {
         background-image: url("smalerHeader.webp");
+    }
+    input[type=submit]{
+        text-align: center;
     }
 }
 

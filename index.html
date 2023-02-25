@@ -93,44 +93,40 @@
 						<div class="form">
 							<form action="https://formsubmit.co/4192ac64528fcfcf7bfe02c1f78a4271" method="POST">
 								<div class="row">
-									<div class="col-25">
-										<label for="name" class="form-label">Name:</label>
-									</div>
-									<div class="col-75">
-										<input type="text" id="name" name="Name" placeholder="Your name.." required>
-									</div>
+									<label for="name" class="form-label">Name:</label>
+									<input type="text" id="name" class="form-controll" name="Name" placeholder="Your name" required>
 								</div>
 								<div class="row">
-									<div class="col-25">
+									
 										<label for="birthday" class="form-label">Date of birth:</label>
-									</div>
-									<div class="col-75">
-										<input type="date" id="birthday" name="birthday" onchange="calculateAge()" max="" required>
-									</div>
+									
+									
+										<input type="date" id="birthday" class="form-controll" name="birthday" onchange="calculateAge()" max="" required>
+									
 								</div>
 								<div style="display: none;">
-									<div class="col-25">
+									
 										<label for="age">Age:</label>
-									</div>
-									<div class="col-75">
+									
+									
 										<textarea id="age" name="Age" placeholder="Age" required hidden></textarea>
-									</div>
+									
 								</div>
 								<div class="row">
-									<div class="col-25">
+									
 										<label for="email" class="form-label">Email:</label>
-									</div>
-									<div class="col-75">
-										<input type="text" id="email" name="E-mail" placeholder="Your email.." required>
-									</div>
+									
+									
+										<input type="text" id="email" class="form-controll" name="E-mail" placeholder="Your email" required>
+									
 								</div>
 								<div class="row">
-									<div class="col-25">
+									
 										<label for="country" class="form-label">Country:</label>
-									</div>
-									<div class="col-75">
-										<select id="country" name="Country">
-											<option>Please select</option>
+									
+									
+										<select class="form-controll" onchange="next()" id="country" name="Country" required>
+											<option value="">Please select</option>
 											<optgroup label="Nordic countries">
 												<option value="Norway">Norway</option>
 												<option value="Denmark">Denmark</option>
@@ -389,31 +385,31 @@
 												<option value="Zambia">Zambia</option>
 												<option value="Zimbabwe">Zimbabwe</option>
 										</select>
-									</div>
+									
 								</div>
 								<div class="row">
-									<div class="col-25">
+									
 										<label for="city" class="form-label">City:</label>
-									</div>
-									<div class="col-75">
-										<input type="text" id="city" name="City" placeholder="Your home city" required>
-									</div>
+									
+									
+										<input type="text" id="city" class="form-controll" name="City" placeholder="Your home city" required>
+									
 								</div>
 								<div class="row">
-									<div class="col-25">
+									
 										<label for="In-game-nick" class="form-label">In-game-nick:</label>
-									</div>
-									<div class="col-75">
-										<input type="text" id="In-game-nick" name="In-game-nick" placeholder="Your in-game-nick.." required>
-									</div>
+									
+									
+										<input type="text" id="In-game-nick" class="form-controll" name="In-game-nick" placeholder="Your in-game-nick." required>
+									
 								</div>
 								<div class="row">
-									<div class="col-25">
+									
 										<label for="about" class="form-label">About you:</label>
-									</div>
-									<div class="col-75">
-										<textarea id="about" name="About" placeholder="Write somthing about yourself, games you play and why you want to join the clan" required></textarea>
-									</div>
+									
+									
+										<textarea id="about" name="About" class="form-controll" placeholder="Write somthing about yourself, games you play and why you want to join the clan" required></textarea>
+									
 								</div>
 								
 								<!-- hidden input fields to customise the email form -->
@@ -437,6 +433,7 @@
 
 			</div>
 		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 		<script src="script.js"></script>
 		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

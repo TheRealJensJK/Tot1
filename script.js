@@ -35,6 +35,12 @@ function setMaxDate(){
   document.getElementById("birthday").setAttribute("max", today);
 }
 
+function next(){
+  //jump to next input field of value is not "Please select"
+  if(document.getElementById("country").value != "Please select"){
+    document.getElementById("city").focus();
+  }
+}
 
 
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -52,3 +58,22 @@ window.addEventListener('resize', () => {
 function scrollDown(){
   window.scrollTo({behavior: 'smooth', top: document.body.scrollHeight});
 }
+
+$(function(){
+  
+  $(".form-controll").on('focus', function(){
+    
+    $(this).parent(".row").addClass("focused");
+    
+
+  });
+
+  $(".form-controll").on('blur', function(){
+    
+    $(this).parent(".row").removeClass("focused");
+    
+
+  });
+
+
+})
