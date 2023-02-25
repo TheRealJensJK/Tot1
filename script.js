@@ -37,7 +37,7 @@ function setMaxDate(){
 
 function next(){
   //jump to next input field of value is not "Please select"
-  if(document.getElementById("country").value != "Please select"){
+  if(document.getElementById("country").value != "Please select country"){
     document.getElementById("city").focus();
   }
 }
