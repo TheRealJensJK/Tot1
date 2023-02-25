@@ -173,7 +173,7 @@ label {
     overflow: hidden;
 }
 .form-label {
-    font-size: 0.75em;
+    font-size: 0.9em;
     display: block;
     opacity: 0;
     transition: all 0.4s;
