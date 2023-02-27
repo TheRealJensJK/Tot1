@@ -1,3 +1,9 @@
+/* 
+   _
+__(.)<  Cpoyright (c) By Jens Nickelsen
+\___)
+
+*/
 //setting the current date as the max date for the date input
 window.onload = setMaxDate();
 
