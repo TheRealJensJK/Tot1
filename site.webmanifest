@@ -1,6 +1,8 @@
 {
     "name":"Tot1 Clan",
     "short_name":"Tot1",
+    "description":"The clan website of TOT1. TOT1 Clan is a gaming community that was founded in 2000.",
+    "start_url":".",
     "icons":[
         {
             "src": "/favicon/android-chrome-192x192.png",
