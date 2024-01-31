@@ -87,17 +87,17 @@ $(function(){
 function formEmail(){
   var honey = document.getElementById("_honey").value;
 
-  var name = "Name: " + document.getElementById("name").value + "\n";
-  var birthday = "Birthday: " + document.getElementById("birthday").value+ "\n";
-  var age = "Age: " + document.getElementById("age").value+ "\n";
-  var city = "City: " + document.getElementById("city").value+ "\n";
-  var email = "Email: " + document.getElementById("email").value+ "\n";
-  var country = "Country: " + document.getElementById("country").value+ "\n";
-  var about = "About: " + document.getElementById("about").value+ "\n";
+  var name = document.getElementById("name").value;
+  var birthday = document.getElementById("birthday").value;
+  var age = document.getElementById("age").value;
+  var city = document.getElementById("city").value;
+  var email = document.getElementById("email").value;
+  var country = document.getElementById("country").value;
+  var about = document.getElementById("about").value;
 
   if(honey == ""){
     if(name != "" && birthday != "" && age != "" && city != "" && email != "" && country != "" && about != ""){
-      window.location.href = "mailto:harryhoover@hotmail.com?subject=New Clan Application&body=" + name +"%0D%0A" + birthday +"%0D%0A" + age +"%0D%0A" + city +"%0D%0A" + email +"%0D%0A" + country +"%0D%0A" + about;  
+      window.location.href = "mailto:harryhoover@hotmail.com?subject=New Clan Application&body=" + "Name: " +  name +"%0D%0A" + "Birthday: " + birthday +"%0D%0A" + "Age: " + age +"%0D%0A" + "City: " + city +"%0D%0A" + "Email: " + email +"%0D%0A" + "Country: " + country +"%0D%0A" + "About: " + about;  
     }
     else{
       alert("Please fill out all fields!");
