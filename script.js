@@ -87,10 +87,16 @@ $(function(){
 function formEmail(){
   var honey = document.getElementById("_honey").value;
 
-  var body = "Name: " + document.getElementById("name").value + '<br>' + "Date of birth: " + document.getElementById("birthday");
+  var name = "Name: " + document.getElementById("name").value + "\n";
+  var birthday = "Birthday: " + document.getElementById("birthday").value+ "\n";
+  var age = "Age: " + document.getElementById("age").value+ "\n";
+  var city = "City: " + document.getElementById("city").value+ "\n";
+  var email = "Email: " + document.getElementById("email").value+ "\n";
+  var country = "Country: " + document.getElementById("country").value+ "\n";
+  var about = "About: " + document.getElementById("about").value+ "\n";
 
   if(honey == ""){
-    window.location.href = "mailto:jens_nickelsen@live.com?subject=New Clan Application&body=" + body;
+    window.location.href = "mailto:jens_nickelsen@live.com?subject=New Clan Application&body=" + name + birthday + age + city + email + country + about;
 }
 else{
   alert("You are a bot! Go away!");
