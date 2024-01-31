@@ -87,7 +87,7 @@ $(function(){
 function formEmail(){
   var honey = document.getElementById("_honey").value;
 
-  var body = document.getElementById("name").value;
+  var body = "Name: " + document.getElementById("name").value + '<br>' + "Date of birth: " + document.getElementById("birthday");
 
   if(honey == ""){
     window.location.href = "mailto:jens_nickelsen@live.com?subject=New Clan Application&body=" + body;
