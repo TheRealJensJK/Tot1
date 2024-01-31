@@ -96,7 +96,13 @@ function formEmail(){
   var about = "About: " + document.getElementById("about").value+ "\n";
 
   if(honey == ""){
-    window.location.href = "mailto:harryhoover@hotmail.com?subject=New Clan Application&body=" + name +"%0D%0A" + birthday +"%0D%0A" + age +"%0D%0A" + city +"%0D%0A" + email +"%0D%0A" + country +"%0D%0A" + about;
+    if(name && birthday && age && city && email && country && about){
+      window.location.href = "mailto:harryhoover@hotmail.com?subject=New Clan Application&body=" + name +"%0D%0A" + birthday +"%0D%0A" + age +"%0D%0A" + city +"%0D%0A" + email +"%0D%0A" + country +"%0D%0A" + about;  
+    }
+    else{
+      alert("Please fill out all fields!");
+    }
+    
 }
 else{
   alert("You are a bot! Go away!");
