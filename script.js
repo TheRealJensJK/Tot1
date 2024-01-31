@@ -83,3 +83,17 @@ $(function(){
 
 
 })
+
+function formEmail(){
+  var honey = document.getElementById("_honey").value;
+
+  var body = document.getElementById("name").value;
+
+  if(honey == ""){
+    window.location.href = "mailto:jens_nickelsen@live.com?subject=New Clan Application&body=" + body;
+}
+else{
+  alert("You are a bot! Go away!");
+  return false;
+}
+}
